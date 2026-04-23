@@ -12,7 +12,7 @@ st.markdown("---")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/Users/samuelcorning/Downloads/Affordable_Housing_by_Town_2011-2022.csv")
+    df = pd.read_csv("Affordable_Housing_by_Town_2011-2022.csv")
     df.columns = df.columns.str.strip()
     df = df.rename(columns={
         "Percent Affordable": "Pct_Affordable",
